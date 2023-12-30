@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/flogo.png" type="image/png">
+    <title>Weather Vue</title>
+</head>
+
+<body>
+
+    <!-- Displaying Logo -->
+    <div id="logo-div" class="logo">
+        <img src="images/logo.png" alt="">
+    </div>
+
+    <!-- Displaying Search Box -->
+    <div id="search-container" class="container-search">
+        <div class="home-page">
+            <h1>Weather Vue</h1>
+            <div class="search-page">
+                <img src="images/weather.png" alt="">
+                <hr>
+                <form id="search-form" class="search-box">
+                    <h2>Search For Your City</h2>
+                    <label for="location">Enter Your Location:</label>
+                    <input type="text" id="location" placeholder="Enter Your Location">
+                    <button id="search" class="fa-solid fa-magnifying-glass" type="submit"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Displaying Weather Box -->
+    <div id="weather-container" class="container-weather">
+        <h1 id="weather-location"></h1>
+        <div class="container2">
+            <div id="weather-icon" class="weather-condition">
+                <img src="" alt="">
+                <h1 id="statement"></h1>
+            </div>
+
+            <div class="weather-details">
+                <div class="temprature-details">
+                    <h1 id="temp"></h1>
+                    <div class="temp-feels">
+                        <p id="tempfeelsC"></p>
+                        <p id="tempfeelsF"></p>
+                        <p id="date-time"></p>
+                    </div>
+                </div>
+                <div class="extra-details">
+                    <div class="humidity">
+                        <i class="fa-solid fa-water"></i>
+                        <h4>Humidity</h4>
+                        <p id="humidityr"></p>
+                    </div>
+
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <h4 id="wind-speed">Wind</h4>
+                        <p id="windr"></p>
+                    </div>
+
+                    <div class="pressure">
+                        <i class="fa-solid fa-tornado"></i>
+                        <h4>Pressure</h4>
+                        <p id="pressurer"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="back-search" class="fa-solid fa-magnifying-glass"> Go Back</button>
+    </div>
+
+    <!-- Remove this extra closing div tag -->
+    <!-- </div> -->
+
+<script src="https://kit.fontawesome.com/9ca583c68d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
